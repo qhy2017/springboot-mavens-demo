@@ -1,4 +1,8 @@
 /target/
+/demo-web/target/
+/demo-service/target/
+/demo-model/target/
+/demo-foundation/target/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
