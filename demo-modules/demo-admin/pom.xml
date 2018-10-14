@@ -8,6 +8,7 @@
 		<groupId>demo-parent</groupId>
 		<artifactId>demo-modules</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<groupId>demo-parent</groupId>
 	<artifactId>demo-admin</artifactId>
@@ -50,17 +51,15 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<finalName>demo-admin</finalName>
 		<plugins>
 			<!-- define the project compile level -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+				<version>2.3.2</version> <version>3.6.1</version> <configuration> <source>1.8</source> 
+				<target>1.8</target> </configuration> </plugin> -->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<!-- <version>2.3.2</version> -->
-				<version>3.6.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
